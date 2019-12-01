@@ -14,7 +14,7 @@ Make sure that the `node/bin` and `git`/`gitbash` paths are on your system/user 
 
 ```shell
 $ git clone https://github.com/johnmanko/jaxrs-ng.git
-$ cd jaxrs-ng
+$ cd jaxrs-ng/jaxrs-ng
 ```
 # Configuring the Angular application
 
