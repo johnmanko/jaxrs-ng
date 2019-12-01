@@ -1,0 +1,37 @@
+<form #form="ngForm" autocomplete="off">
+  <p-panel header="Compute, World!">
+      <div class="p-grid">
+          <div class="p-col">
+              <h3>Let's Compute World this bitch!</h3>
+          </div>
+      </div>
+      <div class="p-grid">
+          <div class="p-col-2">
+              <div></div>
+              <span class="ui-float-label">
+                  <input name="operand1" id="float-input" type="number" size="30" pInputText [(ngModel)]="operation.operand1" [required]="true"/>
+                  <label for="float-input">Operand 1</label>
+              </span>
+          </div>
+          <div class="p-col-2">
+            <div></div>
+              <p-dropdown name="operation" [options]="operations" [(ngModel)]="operation.operation" [required]="true"></p-dropdown>
+          </div>
+          <div class="p-col-2">
+              <div></div>
+              <span class="ui-float-label">
+                  <input name="operand1" id="float-input" type="number" size="30" pInputText [(ngModel)]="operation.operand2" [required]="true"/>
+                  <label for="float-input">Operand 2</label>
+              </span>
+          </div>
+          <div class="p-col-2">
+              <p-button name="command" label="Compute!" (onClick)="doCompute($event)" [disabled]="!form.valid"></p-button>
+          </div>
+      </div>
+  </p-panel>
+  <p-panel header="Computed Result">
+      <div>
+          Result: {{operation.result}}
+      </div>
+  </p-panel>
+</form>
