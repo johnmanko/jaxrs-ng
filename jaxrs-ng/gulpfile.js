@@ -17,7 +17,7 @@ function clean() {
 }
 const ngBuild = shell.task(['ng build', '--prod=true', '--aot=true', '--build-optimizer=true'].join(' '));
 ngBuild.displayName = 'ngBuild';
-const ngServe = shell.task(['ng serve', '--base-href /', '--proxy-config proxy.conf.js', '--host 0.0.0.0', '--disableHostCheck'].join(' '));
+const ngServe = shell.task(['ng serve', '--base-href /', '--proxy-config proxy.conf.js', '--host 0.0.0.0', '--disableHostCheck=true', '--watch=true', '--liveReload=true', '--poll=1000', '--hmr=true'].join(' '));
 ngServe.displayName = 'ngServe';
 const complete = function () {
   return new Promise(function (resolve, reject) {
