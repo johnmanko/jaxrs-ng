@@ -6,7 +6,7 @@
 * Node.js 13+
 * git
 
-Make sure that the `node/bin` and `git`/`gitbash` paths are on your system/user execution path.  If you're on window, use `gitbash` (installed with git) instead of `powershell` for your command line.
+Make sure that your `npm/bin` and `git` paths are on your system/user execution path.  If you're on window, use `gitbash` (installed with git) instead of `powershell` for your command line.
 
 # Getting this repo
 
