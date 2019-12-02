@@ -1,3 +1,11 @@
+# The App
+
+### Hello, World!
+![Hello, World](sample-hello.gif)
+
+### Compute, World!
+![Compute, World](sample-compute.gif)
+
 # Required software
 
 * Netbeans 11.1 or greater

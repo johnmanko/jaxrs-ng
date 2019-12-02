@@ -6,13 +6,13 @@
       </div>
     </div>
     <div class="p-grid">
-      <div class="p-col-2">
+      <div class="p-col-4">
         <span class="ui-float-label">
           <input name="name" type="text" pInputText [(ngModel)]="name" [required]="true" />
           <label for="float-input">Name</label>
         </span>
       </div>
-      <div class="p-col-2">
+      <div class="p-col-4">
         <p-button name="command" label="Say Hello!" (onClick)="sayHello($event)" [disabled]="!form.valid"></p-button>
       </div>
     </div>

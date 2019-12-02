@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="p-grid">
-      <div class="p-col-2">
+      <div class="p-col-3">
         <div></div>
         <span class="ui-float-label">
           <input name="operand1" id="float-input" type="number" size="30" pInputText [(ngModel)]="operation.operand1"
@@ -14,12 +14,12 @@
           <label for="float-input">Operand 1</label>
         </span>
       </div>
-      <div class="p-col-2">
+      <div class="p-col-3">
         <div></div>
         <p-dropdown name="operation" [options]="operations" [(ngModel)]="operation.operation" [required]="true">
         </p-dropdown>
       </div>
-      <div class="p-col-2">
+      <div class="p-col-3">
         <div></div>
         <span class="ui-float-label">
           <input name="operand1" id="float-input" type="number" size="30" pInputText [(ngModel)]="operation.operand2"
@@ -27,7 +27,7 @@
           <label for="float-input">Operand 2</label>
         </span>
       </div>
-      <div class="p-col-2">
+      <div class="p-col-3">
         <p-button name="command" label="Compute!" (onClick)="doCompute($event)" [disabled]="!form.valid"></p-button>
       </div>
     </div>
