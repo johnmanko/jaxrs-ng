@@ -12,6 +12,8 @@ export class ComputeComponent implements OnInit {
 
   public operation: Operation;
   public operations: SelectItem[];
+  public postData: string;
+  public responseData: string;
 
   constructor(private computeService: ComputeService) {
     this.operations = computeService.operationTypes;
@@ -23,8 +25,14 @@ export class ComputeComponent implements OnInit {
   }
 
   doCompute() {
+    this.postData = null;
+    this.responseData = null;
+    this.responseData = null;
+    this.operation.result = undefined;
     this.computeService.doCompute(this.operation).subscribe((data: Operation) => {
+      this.postData = JSON.stringify(this.operation, null, 4);
       this.operation.result = data.result;
+      this.responseData = JSON.stringify(data, null, 4);
     });
   }
 }

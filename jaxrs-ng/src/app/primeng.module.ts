@@ -22,6 +22,8 @@ import { ToastModule } from 'primeng/toast';
 import { ToolbarModule } from 'primeng/toolbar';
 import { InputTextModule } from 'primeng/inputtext';
 import { DropdownModule } from 'primeng/dropdown';
+import { CodeHighlighterModule } from 'primeng/codehighlighter';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   imports: [
@@ -47,7 +49,9 @@ import { DropdownModule } from 'primeng/dropdown';
     ProgressSpinnerModule,
     ToolbarModule,
     InputTextModule,
-    DropdownModule
+    DropdownModule,
+    CodeHighlighterModule,
+    CardModule
   ],
   exports: [
     TooltipModule,
@@ -72,7 +76,9 @@ import { DropdownModule } from 'primeng/dropdown';
     ProgressSpinnerModule,
     ToolbarModule,
     InputTextModule,
-    DropdownModule
+    DropdownModule,
+    CodeHighlighterModule,
+    CardModule
   ]
 })
 export class PrimeNgModule {
